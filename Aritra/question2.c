@@ -17,7 +17,7 @@ void main(){
 		switch(choice){
 			case 1:
 			printf("ENTER THE STRING");
-			scanf(" %s",ch);
+			scanf("\n%s",ch);
 			while(ch[i] != '\0' && i<MAX){
 				sizeChar++;
 				i++;
