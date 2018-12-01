@@ -15,7 +15,7 @@ void main()
     {
         for(int j=0;j<col;j++)
         {
-            scanf("%d",(mat+ (col*i+j) ) );             //'j' changes in the inner loop, 'i' changes in the outer loop in multiples of 'col'
+            scanf("%d",( mat+ (col*i+j) ) );             //'j' changes in the inner loop, 'i' changes in the outer loop in multiples of 'col'
         }
     }
     printf("The given matrix:\n");
@@ -23,7 +23,7 @@ void main()
     {
         for(int j=0;j<col;j++)
         {
-            printf("%d ",*(mat+ (col*i+j) ) );          //same logic as above
+            printf("%d ",*( mat+ (col*i+j) ) );          //same logic as above
         }
         printf("\n");
     }
@@ -32,7 +32,7 @@ void main()
     {
         for(int j=0;j<row;j++)
         {
-            *(trans+k)=*(mat+ (j*col+i) );              //'row' and 'col' are interchanged to pick the elements in TRANSPOSED ORDER
+            *(trans+k)=*( mat+ (j*col+i) );              //'row' and 'col' are interchanged to pick the elements in TRANSPOSED ORDER
             k++;
         }
     }
@@ -41,7 +41,7 @@ void main()
     {
         for(int j=0;j<row;j++)
         {
-            printf("%d ",*(trans+ (row*i+j) ) );       /*'row' and 'col' are interchanged only to print the 1D array in transposed manner
+            printf("%d ",*( trans+ (row*i+j) ) );       /*'row' and 'col' are interchanged only to print the 1D array in transposed manner
                                                        the 'trans' already has the elements in transposed way*/
         }
         printf("\n");
