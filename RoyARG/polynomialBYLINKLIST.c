@@ -69,7 +69,7 @@ void display(node *head)
 }
 node* addEXP(node *tmp1,node *tmp2)
 {
-    node *tmp3=NULL,*res,*ptr;
+    node *tmp3=NULL;
     while(tmp1!=NULL&&tmp2!=NULL)
     {
         if(tmp2->pow < tmp1->pow)
@@ -96,7 +96,7 @@ node* addEXP(node *tmp1,node *tmp2)
     }
     while(tmp2!=NULL)
     {
-        tmp3=add(tmp1->coeff,tmp1->pow,tmp3);
+        tmp3=add(tmp2->coeff,tmp2->pow,tmp3);
         tmp2=tmp2->link;
     }
     return tmp3;
